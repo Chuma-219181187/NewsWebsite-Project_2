@@ -1,0 +1,131 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #001F5A
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #FFFFfF;
+}
+
+conatct-form {
+    padding: 50px 25px 0;
+    max-width: 668px;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.wrapper .sign-up {
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.wrapper .form {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+
+.wrapper .form-group {
+    margin-bottom: 15px;
+}
+
+#name, #email, #phone, #subject {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 11px 15px;
+    height: 48px;
+    border-radius: 100px;
+    color: #FFfFFF;
+    border: 3px solid #e4e8ee;
+    width: 100%;
+}
+
+    #name, #email, #phone, #subject:focus {
+        outline: none;
+    }
+
+        #name::placeholder, #email::placeholder, #phone::placeholder, #subject::placeholder {
+            color: #FFfFFF;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+#Submit {
+    width: 100%;
+    margin: 15px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 12px 29px;
+    height: 48px;
+    text-transform: uppercase;
+    color: #FFfFFF;
+    background-color: #2EA74E;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+# {
+    outline: none;
+}
+
+
+@media (max-width:1030px) {
+    .wrapper::before {
+        left: -25%;
+        min-height: 60vh;
+        height: 500px;
+    }
+}
+
+@media (max-width:76px) {
+    .wrapper {
+        max-width: 550px;
+    }
+
+        .wrapper .headline h1 {
+            font-size: 22px;
+            line-height: 25px;
+        }
+}
+
+div.line {
+    border-top: 2px solid;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 20px;
+    height: 200px;
+    padding: 12px 20px;
+    border: 2px solid #2EA74E;
+    border-radius: 20px;
+    background-color: #ffffff;
+    resize: none;
+}
+
