@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="FnhHomepage.css" />
+<head>
+    <meta charset="utf-8" />
+    <title>ForexNewsHouse</title>
+    <div class="crisp">
+        <script type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "30fd48be-12d7-48e7-a025-7b6f0426154c"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+    </div>
+</head>
+<body>
+
+
+    <header>
+        <img class="logo" src="WebsiteLogo.jpeg" height="120" width="120" />
+        <ul class="nav_links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <div class="moon">
+            <img src="moon.png" id="moon">
+        </div>
+        <img src="NY.png" id="mountains_behind">
+        <h2 id="text">ForexNewsHouse</h2>
+        <a href="#sec" id="btn">Explore</a>
+       
+
+    </section>
+    <div class="intro">
+        <div class="sec" id="sec">
+            <h2>Welcome to ForexNewsHouse</h2>
+            <h3>All forex and stock related news can be found here</h3>
+            <p>visit our pages to find out all that we offer<br><br></p>
+            <h3>Our News Tab</h3>
+            <p>This page will provide you with all the news and stories surrounding yourspecefic topic. Updates will be automatically fed to your feed so that you do not miss out on any news</p>
+            <br>
+            <h3>About Page</h3>
+            <p>This page will provide you with information on what the websiteaims to provide you with. As well as a small glimpse at the developers who brought this website to you.</p>
+            <h4>We aim for transparancy</h4>
+            <h3>Contact Us!</h3>
+            <p>Dont be afraid to contact us with any thoughts or enquiries. We will always look forward to your feedback</p>
+            <div class="YT">
+                <h3>If you are unsure on how news can help you. this youtube video will give you a guide on how to get started</h3>
+                <iframe width="420" height="315"
+                        src="https://youtu.be/VhP2AGHsFz8">
+                </iframe>
+            </div>
+
+        </div>
+
+        <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+
+
+        })
+        </script>
+</body>
+</html>
